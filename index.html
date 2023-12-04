@@ -7,41 +7,68 @@
   <title>Starbucks Türkiye</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   <style>
-
+    .accordion-button:focus {
+      box-shadow: none;
+    }
   </style>
 </head>
 
 <body class="overflow-x-hidden">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow border py-3">
+  <!-- navbar  -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow border pt-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/800px-Starbucks_Corporation_Logo_2011.svg.png"
+          width="50" class="ms-4" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse justify-content-sm-between" id="navbarNav">
+        <ul class="navbar-nav fw-bold">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">STARBUCKS REWARDS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">MENÜ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">KAMPANYALAR</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#">E-GIFT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">KURUMSAL SATIŞ</a>
+          </li>
+        </ul>
+        <hr class="d-sm-block">
+        <ul class="navbar-nav d-flex py-2 flex-row  fw-bold align-items-center">
+          <li class="nav-item mx-3">
+            <a class="nav-link d-flex align-items-center" aria-current="page" href="#"><i
+                class="bi bi-geo-alt-fill fs-5 me-2"></i>Mağazalarımız</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="btn btn-success rounded-pill btn-sm" href="#">Alışverişe Başla</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="btn btn-outline-secondary rounded-pill btn-sm" href="#">Giriş</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="btn btn-dark rounded-pill btn-sm" href="#">Hemen Katıl</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
+  <!-- main  -->
   <main class="container-fluid p-0">
     <div class="row">
-      <aside class="col-sm-5 sticky-sm-top" style="height: calc(100vh - 70px); top: 73px;">
+      <aside class="col-sm-5 sticky-sm-top" style="height: calc(100vh - 84px); top: 85px;">
         <div class="flex flex-grow flex-column">
           <video class="w-100" autoplay="" loop="" defaultmuted="true" playsinline="" preload="auto" height="880"
             style="vertical-align: baseline; background-color: rgb(220, 240, 227); ">
@@ -53,6 +80,7 @@
           </h1>
         </div>
       </aside>
+      <!-- articles -->
       <section class="col-sm-7 py-4">
         <article class="card mb-3 border-0">
           <div class="card-body">
@@ -246,61 +274,78 @@
             </div>
           </div>
         </article>
+        <!-- accordion menu  -->
         <div class="container">
           <footer class="py-3 my-4">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <div class="accordion" id="accordionFlushExample">
+              <div class="accordion-item border-0 py-4">
+                <h2 class="accordion-header border-0">
+                  <button class="accordion-button collapsed fs-4 rounded-3 border-0 bg-body py-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne">
                     Hakkımızda
                   </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Tarihçe</a>
                     </p>
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Şirketimiz</a>
                     </p>
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Mağazalarımız</a>
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item border-0 py-4">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <button class="accordion-button collapsed fs-4 rounded-3 border-0 bg-body py-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                    aria-controls="flush-collapseTwo">
                     Kahve
                   </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Starbucks Reserve
+                      </a>
                     </p>
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Kahve Tedariği & Kavurma & Harmanlama
+                      </a>
                     </p>
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Kavurma Profiline Göre Kahveler
+                      </a>
+                    </p>
+                    <p><a href="#"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Nasıl Mükemmel Kahve Hazırlanır
+                      </a>
+                    </p>
+                    <p><a href="#"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Kahve SSS
+                      </a>
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item border-0 py-4">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <button class="accordion-button collapsed fs-4 rounded-3 border-0 bg-body py-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                    aria-controls="flush-collapseThree">
                     Sosyal Sorumluluk
                   </button>
                 </h2>
@@ -308,24 +353,38 @@
                   data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Etik ticaret
+                      </a>
                     </p>
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Topluma katkı
+                      </a>
                     </p>
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Çevre
+                      </a>
+                    </p>
+                    <p><a href="#"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Çeşitlilik
+                      </a>
+                    </p>
+                    <p><a href="#"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Sürdürülebilirlik
+                      </a>
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item border-0 py-4">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <button class="accordion-button collapsed fs-4 rounded-3 border-0 bg-body py-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                    aria-controls="flush-collapseThree">
                     Starbucks Delivers
                   </button>
                 </h2>
@@ -333,35 +392,104 @@
                   data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        Yemeksepeti
+                      </a>
                     </p>
                     <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
-                    </p>
-                    <p><a href="#"
-                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Secondary
-                        link</a>
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                        GetirYemek
+                      </a>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+            <hr>
+            <div class="footer-end px-4">
+              <div class="d-flex fs-3 gap-3 align-items-center">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-tiktok"></i>
+              </div>
+              <div class="accordion-body pt-4">
+                <p><a href="#"
+                    class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                    Kişisel Veri Aydınlatma Metni
+                  </a>
+                </p>
+                <p><a href="#"
+                    class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                    Ticari İletişim Aydınlatma Metni
+                  </a>
+                </p>
+                <p><a href="#"
+                    class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                    Kullanım Koşulları
+                  </a>
+                </p>
+                <p><a href="#"
+                    class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                    Çerez Tercihleri
+                  </a>
+                </p>
+                <p><a href="#"
+                    class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                    Çerez Aydınlatma Metni
+                  </a>
+                </p>
+                <p><a href="#"
+                    class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                    Besin Değerleri Tablosu
+                  </a>
+                </p>
+                <p><a href="#"
+                    class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                    Gift Card
+                  </a>
+                </p>
+                <p><a href="#"
+                    class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-semibold">
+                    Bize Ulaşın
+                  </a>
+                </p>
+                <a href="#" class="btn btn-outline-success rounded-pill btn-sm">English</a>
+              </div>
+            </div>
           </footer>
         </div>
       </section>
     </div>
 
   </main>
+  <!-- modal  -->
+  <div class="modal modal-lg fade" id="myModal" aria-hidden="true" aria-labelledby="myModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0 py-0 pt-2">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
 
 
+        <div class="modal-body">
+          <img src="https://content.sbuxtr.com/images/sbx-popup-toffee-nut.jpg" class="w-100 img-thumbnail" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script>
+    const myModal = new bootstrap.Modal(document.getElementById('myModal'), {
+      keyboard: false
+    })
+    myModal.show()
+  </script>
 </body>
 
 </html>
